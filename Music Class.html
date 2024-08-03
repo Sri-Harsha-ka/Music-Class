@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Class</title>
+    <link rel="stylesheet" href="Music Class.css">
+    <link rel=" icon" href="img/iconRel.png" type="image/x-icon">
+</head>
+
+<body id="Body">
+    <nav id="navBar">
+        <li id="Home" class="navEle">
+            <button id="homeBtn">Home</button>
+        </li>
+        <li id="Courses" class="navEle">
+            <button id="coursesBtn">Courses</button>
+        </li>
+        <li id="Search" class="navEle">
+            <div id="searchBar">
+                <label for="Text">Search:</label>
+                <input type="text" id="Text" name="Search">
+            </div>
+        </li>
+
+        <li class="navEle" id="db">
+            <img src="img/db.png" alt="db" id="theamDb" onclick="react()">
+        </li>
+
+        <li id="Settings" class="navEle">
+            <button id="menuBtn"><img src="img/menu.png" alt="menu" id="navMenu"></button>
+        </li>
+
+    </nav>
+    <div id="menuEle" class="hidden">
+        <li class="menuLi"><button class="menuEleBtn" id="menuEleBtn1">Settings</button></li>
+        <hr>
+        <li class="menuLi"><button class="menuEleBtn" id="menuEleBtn2">Instruments</button></li>
+        <hr>
+        <li class="menuLi"><button class="menuEleBtn" id="menuEleBtn3">Cart</button></li>
+        <hr>
+        <li class="menuLi"><button class="menuEleBtn" id="menuEleBtn4">SigUp/SigIn</button></li>
+    </div>
+    <div id="navBodyHome">
+        <div id="colorMid">
+            <div id="midSec">
+                <div id="midContent">
+                    WelCome To the Adani Music Class
+                </div>
+            </div>
+        </div>
+        <div id="entireContainer">
+            <div id="con1" class="con">
+                <p id="con1Head" class="conHead">Vilon</p>
+                <div class="subCon">
+                    <img src="img/instrument1.png" alt="instrument" id="instrument1">
+                    <p class="conCont">Lorem ipsum dolor sit amet consectetur adipisicing eliUndcupiditate esse,
+                        nisi
+                        sapiente numquam soluta! Quam explicabo blanditiis in adipisci velit deleniti nulla. Maxime iste
+                        at
+                    </p>
+                </div>
+                <button class="viewCourse" onclick="courseBtnSwitch()">View Course</button>
+            </div>
+            <div id="con2" class="con">
+                <p id="con2Head" class="conHead">Piano</p>
+                <div class="subCon">
+                    <img src="img/piano.png" alt="piano" id="pianoImg">
+                    <p class="conCont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde cupiditate esse,
+                        nisi
+                        sapiente numquam soluta! Quam explicabo blanditiis in adipisci velit deleniti nulla. Maxime iste
+                        at
+                        </p>
+                </div>
+                <button class="viewCourse" onclick="courseBtnSwitch()">View Course</button>
+            </div>
+            <div id="con3" class="con">
+                <p id="con3Head" class="conHead">Guitar</p>
+                <div class="subCon">
+                    <img src="img/guitar.png" alt="guitar" id="guitarImg">
+                    <p class="conCont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde cupiditate esse,
+                        nisi
+                        sapiente numquam soluta! Quam explicabo blanditiis in adipisci velit deleniti nulla. Maxime iste
+                        at
+                       </p>
+                </div>
+                <button class="viewCourse" onclick="courseBtnSwitch()">View Course</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="navBodyCourse">
+        <div id="course1" class="course">
+            <div id="course1Img">
+                <div class="image-container">
+                    <img src="img/courses/tranding.png" class="image" alt="Image 1">
+                    <img src="img/courses/treanding fream.png" class="image" alt="Image 2">
+                    <img src="img/courses/treanding fream 2.png" class="image" alt="Image 3">
+                </div>
+            </div>
+            <div id="course1Details">
+                <p class="courseDeatilsHead1">Vilon</p>
+                <p class="courseDeatilspara1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ab a, temporibus tempora reprehenderit
+                    laboriosam excepturi dolor aut porro rem ducimus recusandae quod corrupti necessitatibus reiciendis
+                    amet, magni architecto harum beatae repudiandae. Minus, itaque consequuntur.
+                </p>
+                <button id="course1CartBtn" onclick="notYet()">Book Now!</button>
+            </div>
+        </div>
+        <div id="course2" class="course">
+            <div id="course2Img"></div>
+            <div id="course2Details">
+                <p class="courseDeatilsHead1">Guitar</p>
+                <p class="courseDeatilspara1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ab a, temporibus tempora reprehenderit
+                    laboriosam excepturi dolor aut porro rem ducimus recusandae quod corrupti necessitatibus reiciendis
+                    amet, magni architecto harum beatae repudiandae. Minus, itaque consequuntur.
+                </p>
+                <button id="course2CartBtn" onclick="notYet()">Book Now!</button>
+            </div>
+        </div>
+        <div id="course3" class="course">
+            <div id="course3Img"></div>
+            <div id="course3Details">
+                <p class="courseDeatilsHead2">Piano</p>
+                <p class="courseDeatilspara2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ab a, temporibus tempora reprehenderit
+                    laboriosam excepturi dolor aut porro rem ducimus recusandae quod corrupti necessitatibus reiciendis
+                    amet, magni architecto harum beatae repudiandae. Minus, itaque consequuntur.
+                </p>
+                <button class="course3CartBtn" onclick="notYet()">Book Now!</button>
+            </div>
+        </div>
+        <div id="course4" class="course">
+            <div id="course4Img"></div>
+            <div id="course4Details">
+                <p class="courseDeatilsHead2">Drums</p>
+                <p class="courseDeatilspara2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ab a, temporibus tempora reprehenderit
+                    laboriosam excepturi dolor aut porro rem ducimus recusandae quod corrupti necessitatibus reiciendis
+                    amet, magni architecto harum beatae repudiandae. Minus, itaque consequuntur.
+                </p>
+                <button class="course3CartBtn" onclick="notYet()">Book Now!</button>
+            </div>
+        </div>
+        <div id="course5" class="course">
+            <div id="course5Img"></div>
+            <div id="course5Details">
+                <p class="courseDeatilsHead2">Flute</p>
+                <p class="courseDeatilspara2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ab a, temporibus tempora reprehenderit
+                    laboriosam excepturi dolor aut porro rem ducimus recusandae quod corrupti necessitatibus reiciendis
+                    amet, magni architecto harum beatae repudiandae. Minus, itaque consequuntur.
+                </p>
+                <button class="course3CartBtn" onclick="notYet()">Book Now!</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="menuBodyInstruments">
+        <div id="instColm1">
+            <div id="instColm1Material1" class="instColmMaterial">
+                <div id="instColm1Material1Img" class="instColm1MaterialImg">
+                    <img src="img/store/vilon1.png" alt="vilon1" class="instColm1Img">
+                </div>
+                <div class="instColm1MaterialDetails" class="instColm1MaterialImg">
+                    <p class="Colm1MaterialHead"><b>15,000</b></p>
+                    <p class="Colm1Materialpara">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, impedit....
+                    </p>
+                    <div class="instColm1Buttons">
+                        <button class="colm1Material1Btn1" onclick="adding1()">Add To Cart</button>
+                        <button class="colm1Material1Btn2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div id="instColm1Material2" class="instColmMaterial">
+                <div id="instColm1Material2Img" class="instColm1MaterialImg">
+                    <img src="img/store/vilon2.jpg" alt="vilon-2" class="instColm1Img">
+                </div>
+                <div class="instColm1MaterialDetails">
+                   <div class="headContainerOffer"> <p class="Colm1MaterialHead"><b>39,999</b> <strike class="offer">67,999</strike></p> </div>
+                    <p class="Colm1Materialpara">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, impedit....
+                    </p>
+                    <div class="instColm1Buttons">
+                        <button class="colm1Material1Btn1" onclick="adding2()">Add To Cart</button>
+                        <button class="colm1Material1Btn2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div id="instColm1Material3" class="instColmMaterial">
+                <div id="instColm1Material3Img" class="instColm1MaterialImg">
+                    <img src="img/store/guitar1.jpg" alt="guitar-1" class="instColm1Img">
+                </div>
+                <div class="instColm1MaterialDetails">
+                   <div class="headContainerOffer"> <p class="Colm1MaterialHead"><b>27,999</b> <strike class="offer">35,999</strike> </p></div>
+                    <p class="Colm1Materialpara">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, impedit....
+                    </p>
+                    <div class="instColm1Buttons">
+                        <button class="colm1Material1Btn1" onclick="adding3()">Add To Cart</button>
+                        <button class="colm1Material1Btn2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div id="instColm1Material4" class="instColmMaterial">
+                <div id="instColm1Material4Img" class="instColm1MaterialImg">
+                    <img src="img/store/guitar3.jpg" alt="guitar-bag-1" class="instColm1Img">
+                </div>
+                <div class="instColm1MaterialDetails">
+                   <div class="headContainerOffer"> <p class="Colm1MaterialHead"><b>2,999</b></p> </div>
+                    <p class="Colm1Materialpara">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, impedit....
+                    </p>
+                    <div class="instColm1Buttons">
+                        <button class="colm1Material1Btn1" onclick="adding4()">Add To Cart</button>
+                        <button class="colm1Material1Btn2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div id="instColm1Material5" class="instColmMaterial">
+                <div id="instColm1Material5Img" class="instColm1MaterialImg">
+                    <img src="img/store/drum-sticks-1.jpg" alt="drum-sticks-1" class="instColm1Img">
+                </div>
+                <div class="instColm1MaterialDetails">
+                   <div class="headContainerOffer"> <p class="Colm1MaterialHead"><b>4,999</b>  <strike class="offer">6,000</strike> </p></div>
+                    <p class="Colm1Materialpara">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, impedit....
+                    </p>
+                    <div class="instColm1Buttons">
+                        <button class="colm1Material1Btn1" onclick="adding5()">Add To Cart</button>
+                        <button class="colm1Material1Btn2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="instColm2">
+            <div id="instColm2Material1" class="instColmMaterial">
+                <div id="instColm2Material1Img" class="instColm1MaterialImg">
+                    <img src="img/store/guitar4.jpeg" alt="guitar-4" class="instColm1Img">
+                </div>
+                <div class="instColm1MaterialDetails">
+                   <div class="headContainerOffer"> <p class="Colm1MaterialHead"><b>19,999</b></p></div>
+                    <p class="Colm1Materialpara">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, impedit....
+                    </p>
+                    <div class="instColm1Buttons">
+                        <button class="colm1Material1Btn1" onclick="adding6()">Add To Cart</button>
+                        <button class="colm1Material1Btn2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div id="instColm2Material2" class="instColmMaterial">
+                <div id="instColm2Material2Img" class="instColm1MaterialImg">
+                    <img src="img/store/keyboard1.jpg" alt="keyboard1" class="instColm1Img">
+                </div>
+                <div class="instColm1MaterialDetails">
+                   <div class="headContainerOffer"> <p class="Colm1MaterialHead"><b>12,999</b><strike class="offer">17,999</strike> </p></div>
+                    <p class="Colm1Materialpara">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, impedit....
+                    </p>
+                    <div class="instColm1Buttons">
+                        <button class="colm1Material1Btn1"  onclick="adding7()">Add To Cart</button>
+                        <button class="colm1Material1Btn2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div id="instColm2Material3" class="instColmMaterial">
+                <div id="instColm2Material3Img" class="instColm1MaterialImg">
+                    <img src="img/store/shehnai1.jpeg" alt="shehnai1" class="instColm1Img">
+                </div>
+                <div class="instColm1MaterialDetails">
+                   <div class="headContainerOffer"> <p class="Colm1MaterialHead"><b>14,985</b><strike class="offer">20,000</strike> </p></div>
+                    <p class="Colm1Materialpara">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, impedit....
+                    </p>
+                    <div class="instColm1Buttons">
+                        <button class="colm1Material1Btn1" onclick="adding8()">Add To Cart</button>
+                        <button class="colm1Material1Btn2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div id="instColm2Material4" class="instColmMaterial">
+                <div id="instColm2Material4Img" class="instColm1MaterialImg">
+                    <img src="img/store/vena1.jpg" alt="vena1" class="instColm1Img">
+                </div>
+                <div class="instColm1MaterialDetails">
+                   <div class="headContainerOffer"> <p class="Colm1MaterialHead"><b>76,999</b><strike class="offer">98,999</strike> </p></div>
+                    <p class="Colm1Materialpara">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, impedit....
+                    </p>
+                    <div class="instColm1Buttons">
+                        <button class="colm1Material1Btn1"  onclick="adding9()">Add To Cart</button>
+                        <button class="colm1Material1Btn2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div id="instColm2Material5" class="instColmMaterial">
+                <div id="instColm2Material5Img" class="instColm1MaterialImg">
+                    <img src="img/store/guitarstrings1.jpeg" alt="keyboard1" class="instColm1Img">
+                </div>
+                <div class="instColm1MaterialDetails">
+                   <div class="headContainerOffer"> <p class="Colm1MaterialHead"><b>2,596</b><strike class="offer">3,000</strike> </p></div>
+                    <p class="Colm1Materialpara">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, impedit....
+                    </p>
+                    <div class="instColm1Buttons">
+                        <button class="colm1Material1Btn1" onclick="adding10()">Add To Cart</button>
+                        <button class="colm1Material1Btn2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="menuBodyCart">
+       
+    </div>
+
+    <footer id="contactUs">
+        <div id="contactUsContant">
+            <h6 id="contactHead">Contact Us</h6>
+            <hr>
+            <div id="smImg">
+                <img src="img/facebook.png" alt="facebook" id="imgFacebook" class="smIcons">
+                <img src="img/instagram.png" alt="instagram" id="imgInstagram" class="smIcons">
+                <img src="img/twitter.png" alt="twitter" id="imgTwitter" class="smIcons">
+                <img src="img/youtube.png" alt="youtube" id="imgYoutube" class="smIcons">
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="Music Class.js"></script>
+
+</body>
+
+</html>

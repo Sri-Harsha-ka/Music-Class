@@ -1,0 +1,606 @@
+/* Css Of Global web */
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    #entireContainer{
+        background-color: rgb(255 221 181);
+        transition: all 800ms ease-in-out;
+    }
+    ::-webkit-scrollbar{
+        width: 8px;
+        background-color: gray;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: rgb(23 93 96);
+        border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        transition: all 2s ease-in ;
+
+        width: 16px;
+        border-radius: 8px;
+        background-color: #53BD73;
+    }
+
+/* Navigation css  */
+    #navBar{
+        background-color: #53BD73;
+        display: flex;
+        justify-content: space-evenly;
+
+        /* transition: all 800ms ease-in-out; */
+        position: relative;
+        z-index: 1;
+    }
+
+    #homeBtn{
+        padding: 20px 15px 20px 15px;
+
+        border: 0px;
+        color: white;
+        background-color: #79dd98;
+
+        cursor: pointer;
+        transition: all 800ms ease-in;
+    }
+
+    #coursesBtn{
+        padding: 20px 15px 20px 15px;
+
+        border: 0px;
+        color: white;
+        background-color: #79dd98;
+
+        cursor: pointer;
+        transition: all 800ms ease-in;
+    }
+    
+    .navEle{
+        list-style: none;
+    }
+
+    #Search{
+        color: white;
+        padding: 15px 0px;
+    }
+    #Text{
+        padding: 4px 15px;
+
+        border: 0px;
+        border-radius: 5px;
+        border-bottom: 3px solid #22b14f;
+        background-color:#79dd98;
+
+        transition: all 800ms ease-out;
+    }
+
+    #navMenu{
+        width: 30px;
+        margin: 10px 0px;
+        transition: all 1s ease-out;
+    }
+    #menuBtn{
+        background: #53BD73;
+        border: 0px;
+    }
+    #navMenu:hover{
+        transform: rotate(1turn);
+    }
+    #menuEle{
+        z-index: 2;
+        right: 150px;
+        position: absolute;
+
+
+        width: 90px;
+        border-radius: 10px;
+        background-color: rgb(27 113 149);
+
+    }
+
+    .hidden{
+        display: none;
+    }
+    .shown{
+        display: block;
+    }
+    .menuLi{
+        padding: 5px;
+        color: white;
+        list-style: none;
+    }
+    .menuEleBtn{
+        padding: 5px;
+
+        cursor: pointer;
+
+        border: 0px;
+        color: white;
+        background-color: rgb(27 113 149);
+        transition: all 150ms ease-in-out;
+
+        &:hover{
+            font-weight: bolder;
+            color: crimson;
+        }
+    }
+  
+    .settings{
+        list-style: none;
+        padding: 3px 3px;
+    }
+    .lineSet{
+        margin: 7px 4px;
+    }
+
+    #theamDb{
+        width: 30px;
+        margin: 10px 0px;
+
+        transition: all 800ms ease-in;
+    }
+    
+    /* Menu */
+
+    /* instruments  */
+
+    #menuBodyInstruments{
+        display: none;
+        justify-content: space-around;
+
+        background-color: rgb(255 221 181) ;
+        padding: 15px;
+    }
+    #instColm1{
+        display: flex;
+        flex-direction: column;   
+    }
+    #instColm2{
+        display: flex;
+        flex-direction: column;   
+    }
+    .instColmMaterial{
+        width: 600px;
+        height: 300px;
+        display: flex;
+
+        margin: 10px;
+
+        background: rgb(255 228 199);
+        border-radius: 5px;
+        color: rgb(98, 98, 98);
+    }
+   
+        
+    .instColm1Img{
+        margin: 35px;
+        
+        width: 180px;
+        height: 200px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .instColm1Material1Details{
+        padding: 40px;
+    }
+    /* #instColm1Material2Img{
+        background: transparent;
+    } */
+
+    /* .instColm1MaterialImg{
+       
+    } */
+
+    .Colm1MaterialHead{
+        font-size: 30px;
+        margin: 25px;
+    }
+
+    .headContainerOffer{
+        display: flex;
+    }
+    .offer{
+        font-size: 15px;
+        color: #0090b4;
+    }
+
+    .colm1Material1Btn1{
+        background: gray;
+        box-shadow: 1px 1px 18px gray;
+        color: white;
+        border: none;
+        padding: 10px;
+        /* margin: 19px; */
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .colm1Material1Btn2{
+        background: rgb(50, 166, 50);
+        box-shadow: 1px 1px 18px rgb(50, 166, 50);
+        color: white;
+        border: none;
+        padding: 10px;
+        /* margin: 19px; */
+        border-radius: 5px;
+        transition: all 200ms ease-in;
+        cursor: pointer;
+        &:hover{
+            font-size: 15px;
+            font-weight: bolder;
+        }
+    }
+    .instColm1Buttons{
+        margin:20px 10px ;
+    }
+
+    /* Cart  */
+
+    #menuBodyCart{
+        background: rgb(255 221 181);
+        margin: 0;
+        padding: 10px;
+    }
+
+/* Navigation css Close  */
+
+/* Image section */
+
+    #colorMid{
+        background-color: black;
+        position: relative;
+        z-index: 1;
+    }
+    #midSec{
+        height: 400px;
+        background: center / cover no-repeat url("img/darkmain.png");
+        opacity: 0.6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* transition: all 800ms ease-in-out; */
+    }
+    #midContent{
+        color: white;
+        font-size: 99px;
+    }
+/* Image section Close */
+
+/* homeCourses section */
+
+    #entireContainer{
+        display: flex;
+        justify-content: space-between;
+
+        padding: 50px 50px;
+    }
+
+    .con{
+        
+        width: 375px;
+        height: 285px;
+
+        background-color: rgb(255 228 199);
+        border-radius: 4px;
+
+        transition: all 800ms ease-out 300ms;
+
+    }
+
+    .conHead{
+        display: flex;
+        justify-content: center;
+
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+        
+        font-size: 25px;
+        font-style: italic;
+
+        padding: 3px 3px;
+    }
+
+    .conCont{
+        padding-top: 15px;
+        padding-left: 8px;
+        display: flex;
+        max-width: 20vw;
+    }
+
+    .subCon{
+        display: flex;
+        justify-content: space-between;
+    }
+    #instrument1{
+        width: 75px;
+        margin: 35px 22px;
+    }
+    #pianoImg{
+        width: 75px;
+        margin: 35px 23px;
+    }
+    #guitarImg{
+        width: 75px;
+        margin: 29px 21px;
+    }
+
+    .viewCourse{
+        padding: 5px 5px;
+
+        color: white;
+        background-color: #53BD73;
+        border: 1px solid #53BD73;
+        border-radius: 5px ;
+        box-shadow: 1px 1px 18px 1px #79dd98;
+
+        transition: all 800ms ease-out 300ms; 
+
+        position: relative;
+        top: 35px;
+        left: 200px;
+    }
+
+    /* hover */
+        #con1:hover{
+            width: 400px;
+            
+
+            background-color: rgb(238, 148, 53) ;
+            box-shadow: 1px 1px 18px 1px #ffe75f;
+        }
+        #con2:hover{
+            width: 400px;
+
+            background-color: 	#bf8bff;
+            box-shadow: 1px 1px 18px 1px #cca3ff;
+        }
+        #con3:hover{
+            width: 400px;
+
+            background-color: #7BB4E3;
+            box-shadow: 1px 1px 18px 1px #A3CEEF;
+        }
+
+        #con1:hover .viewCourse{
+            padding: 8px;
+
+            background-color: red;
+            border: 1px solid red;
+            box-shadow: 1px 1px 18px 1px rgb(255, 74, 74);
+        }
+        #con2:hover .viewCourse{
+            padding: 8px;
+
+            background-color: #C71585;
+            border: 1px solid #C71585;
+            box-shadow: 1px 1px 18px 1px #cb3e98;
+        }
+        #con3:hover .viewCourse{
+            padding: 8px;
+
+            background-color:  #2b35af;
+            border: 1px solid  #2b35af;
+            box-shadow: 1px 1px 18px 1px #4361ee;
+        }
+
+/* Courses Section */
+    #navBodyCourse{
+        padding: 40px 35px;
+
+        display: none;
+        flex-direction: column;
+
+        background-color: rgb(255 221 181);
+    }
+
+    /* course all */
+        .course{
+            margin: 30px;
+            padding: 35px 30px;
+
+            width: 1340px;
+            height: 335px ;
+
+            display: flex;
+            justify-content: space-between;
+
+            border-radius: 5px;
+            background: rgb(255 228 199);
+        }
+        .courseDeatilsHead1{
+            margin: 20px;
+    
+            font-size: 35px;
+            color: #F0EFEE;
+        }
+        .courseDeatilspara1{
+            margin:20px; 
+            display: flex;
+
+    
+            width: 600px;
+            color: antiquewhite;
+        }
+        .courseDeatilsHead2{
+            margin: 20px;
+    
+            font-size: 35px;
+            color: #000000;
+        }
+        .courseDeatilspara2{
+            margin:20px;
+    
+            width: 600px;
+            color: rgb(0, 0, 0);
+        }
+        .course3CartBtn{
+            margin: 20px 50px;
+            padding: 10px;
+
+            color: white;
+            background-color: #e1a41f;
+            border: 1px solid #e1a41f;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .course3CartBtn:hover{
+            box-shadow: 1px 1px 18px 1px #e1a41f;
+            transition: all 500ms ease-in-out 0ms;
+        }
+        
+
+    /* course 1 */
+    #course1{
+        background-color: #f64d39;
+        box-shadow: 1px 1px 18px 1px #f64d39;
+    }
+    #course1Img{
+        width: 415px;
+        height: 260px;
+        border-radius: 5px;
+        background-image: url('img/courses/vilon.jpg');
+    }
+    #course1CartBtn{
+        margin: 20px 50px;
+        padding: 10px;
+
+        color: white;
+        background-color: #e1331f;
+        border: 1px solid #e1331f;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #course1CartBtn:hover{
+        box-shadow: 1px 1px 18px 1px #e1331f;
+        transition: all 500ms ease-in-out 0ms;
+    }
+    @keyframes imageAnimation {
+        0% { opacity: 1; }
+        33.33% { opacity: 0; }
+        66.66% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+      
+      .image-container {
+        position: relative;
+        width: 30px; /* Adjust according to your image size */
+        height: 30px; /* Adjust according to your image size */
+        overflow: hidden;
+      }
+      
+      .image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        opacity: 0;
+        animation: imageAnimation 800ms infinite; /* Change 3s to desired interval */
+      }
+      
+      .image:nth-child(1) {
+        animation-delay: 0s;
+      }
+      
+      .image:nth-child(2) {
+        animation-delay: 500ms; /* Delay by 500ms second */
+      }
+      
+      .image:nth-child(3) {
+        animation-delay: 1s; /* Delay by 2 seconds */
+      }
+    /* Course 2 */
+        #course2{
+            background-color: #00CCFF;
+            box-shadow: 1px 1px 18px 1px #00CCFF;
+        }
+        #course2Img{
+            width: 445px;
+            height: 272px;
+
+            border-radius: 5px;
+
+            background-repeat: no-repeat;
+            background-image: url("img/courses/guitar.jpeg");
+            background-size: contain;
+        }
+        #course2CartBtn{
+            margin: 20px 50px;
+            padding: 10px;
+
+            color: white;
+            background-color: #0090b4;
+            border: 1px solid #0090b4;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #course2CartBtn:hover{
+            box-shadow: 1px 1px 18px 1px #0090b4;
+            transition: all 500ms ease-in-out 0ms;
+        }
+
+     /* Course 3 */
+        #course3Img{
+            width: 415px;
+            height: 272px;
+
+            border-radius: 5px;
+
+            background-repeat: no-repeat;
+            background-image: url("img/courses/piano.jpg");
+            background-size: contain;
+        }
+    /* Course 4 */
+        #course4Img{
+            width: 415px;
+            height: 272px;
+
+            border-radius: 5px;
+
+            background-image: url("img/courses/drums1.jpg");
+            background-size: contain;
+        }
+    /* Course 5 */
+        #course5Img{
+            width: 415px;
+            height: 272px;
+
+            border-radius: 5px;
+
+            background-repeat: no-repeat;
+            background-image: url("img/courses/flute.webp");
+            background-size: contain;
+        }
+
+/* Footer */
+
+    #contactUs{
+        background-color: #13536d;
+        height: 350px;
+        color: white;
+    }
+
+    #contactHead{
+        display: flex;
+        justify-content: center;
+
+        font-size: 40px;
+        font-style: italic;
+
+        padding: 30px 15px;
+
+    }
+
+    #smImg{
+        display: flex;
+        justify-content: center;
+        margin: 5px 5px;
+        
+    }
+
+    .smIcons{
+        width: 110px;
+        cursor: pointer;
+    }
